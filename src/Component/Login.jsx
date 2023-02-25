@@ -31,6 +31,9 @@ export default function Login() {
             sessionStorage.setItem("username",user.username)
             sessionStorage.setItem("userid",user.id)
             sessionStorage.setItem("role",user.role)
+            if(user.role==="Admin")
+            navigate("/admin-home")
+            else
             navigate("/profile")
         }
         else

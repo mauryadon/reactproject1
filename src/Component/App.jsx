@@ -14,6 +14,7 @@ import Signup from './Signup'
 import Profile from './Profile'
 import UpdateProfile from './UpdateProfile'
 import SingleProduct from './SingleProduct'
+import Confirmation from './Confirmation'
 
 import AdminHome from './Admin/AdminHome'
 
@@ -33,6 +34,13 @@ import AdminAddProduct from './Admin/AdminAddProduct'
 import AdminProduct from './Admin/AdminProduct'
 import AdminUpdateProduct from './Admin/AdminUpdateProduct'
 
+import AdminUsers from './Admin/AdminUsers'
+import AdminNewslatters from './Admin/AdminNewslatter'
+import AdminContact from './Admin/AdminContact'
+import AdminSingleContact from './Admin/AdminSingleContact'
+import AdminCheckout from './Admin/AdminCheckout'
+import AdminSingleCheckout from './Admin/AdminSingleCheckout'
+
 export default function App() {
   return (
     <>
@@ -50,6 +58,7 @@ export default function App() {
           <Route path='/signup' element={<Signup />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/update-profile' element={<UpdateProfile />} />
+          <Route path='/confirmation' element={<Confirmation />} />
 
           <Route path='/admin-home' element={<AdminHome />} />
 
@@ -68,6 +77,13 @@ export default function App() {
           <Route path='/admin-product' element={<AdminProduct />} />
           <Route path='/admin-add-product' element={<AdminAddProduct />} />
           <Route path='/admin-update-product/:id' element={<AdminUpdateProduct />} />
+
+          <Route path='/admin-user' element={<AdminUsers />} />
+          <Route path='/admin-newslatter' element={<AdminNewslatters />} />
+          <Route path='/admin-contact' element={<AdminContact />} />
+          <Route path='/admin-single-contact/:id' element={<AdminSingleContact />} />
+          <Route path='/admin-checkout' element={<AdminCheckout />} />
+          <Route path='/admin-single-checkout/:id' element={<AdminSingleCheckout />} />
 
         </Routes>
         <Footer />

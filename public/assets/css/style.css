@@ -4,8 +4,10 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
 .mySlider {
   background-color: rgb(237, 221, 148);
+  color: #1c383d;
 }
 
 .myText {
@@ -2319,7 +2321,7 @@ pre code {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  color: #252627;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
@@ -12190,7 +12192,7 @@ h5,
 }
 
 .hero-wrap.hero-bread {
-  padding: 12em 0;
+  padding: 10em 0;
 }
 
 .mouse {
@@ -13369,7 +13371,7 @@ h5,
 
 .ftco-cart button,
 .ftco-cart .form-control {
-  height: 54px !important;
+  height: 50px !important;
   text-align: center;
   bordeR: 1px solid rgba(0, 0, 0, 0.05) !important;
   color: #000000 !important;
@@ -13436,15 +13438,23 @@ h5,
 }
 
 .table .thead-primary tr th {
-  padding: 20px 10px;
+  padding: 10px 5px;
   color: #fff !important;
   border: 1px solid transparent !important;
+}
+
+.Table tbody tr td {
+  text-align: center !important;
+  vertical-align: middle;
+  padding: 20px 10px;
+  border: 1px solid transparent !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
 }
 
 .table tbody tr td {
   text-align: center !important;
   vertical-align: middle;
-  padding: 40px 10px;
+  padding: 30px 10px;
   border: 1px solid transparent !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
 }
@@ -13452,7 +13462,7 @@ h5,
 .table tbody tr td.product-remove a {
   background: #dbcc8f;
   padding: 4px 10px;
-  color: #000000;
+  color: #000;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -13460,7 +13470,7 @@ h5,
 }
 
 .table tbody tr td.product-remove a:hover {
-  border: 1px solid #dbcc8f;
+  border: -1px solid #dbcc8f;
   background: #dbcc8f;
 }
 
@@ -13581,15 +13591,15 @@ h5,
 }
 
 .billing-form .form-control {
-  font-weight: 300;
+  font-weight: 450;
   border: transparent !important;
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
   height: 58px !important;
   padding-left: 15px;
   padding-right: 15px;
   background: transparent !important;
-  color: rgba(0, 0, 0, 0.4) !important;
-  font-size: 14px;
+  color: #040505 !important;
+  font-size: 17px;
   border-radius: 0px;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
@@ -13597,7 +13607,7 @@ h5,
 
 .billing-form .form-control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: rgba(0, 0, 0, 0.4);
+  color: #1c383d;
 }
 
 .billing-form .form-control::-moz-placeholder {

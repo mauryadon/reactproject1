@@ -44,14 +44,13 @@ export default function Navbar() {
                             <li className="nav-item"><Link to="/shop/All/" className="nav-link">Shop</Link></li>
                             <li className="nav-item"><Link to="/contact" className="nav-link">Contact</Link></li>
                             <li className="nav-item"><Link to="/admin-home" className="nav-link">Admin</Link></li>
-                            <li className="nav-item cta cta-colored"><Link to="/cart" className="nav-link"><span className="icon-shopping_cart"></span>[0]</Link></li>
                             {
                                 sessionStorage.getItem("login") ?
                                     <li className="nav-item dropdown">
                                         <Link className="nav-link dropdown-toggle" to="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MauryaDon</Link>
                                         <div className="dropdown-menu" aria-labelledby="dropdown04">
                                             <Link className="dropdown-item" to="/profile">Profile</Link>
-                                            <Link className="dropdown-item" to="/cart">Cart</Link>
+                                            <Link className="dropdown-item" to="/cart"><span className="icon-shopping_cart"></span>Cart</Link>
                                             <button className="dropdown-item" onClick={logout}>Logout</button>
                                         </div>
                                     </li> :

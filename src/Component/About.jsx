@@ -138,46 +138,46 @@ export default function About() {
                 <div className="container-fluid px-0">
                     <div className="row no-gutters">
                         <div className="col-md-4 col-lg-2 ftco-animate">
-                            <Link to="images/gallery-1.jpg" className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: "url('assets/images/gallery-1.jpg')" }}>
+                            <a href="https://www.instagram.com" className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: "url('assets/images/gallery-1.jpg')" }}>
                                 <div className="icon mb-4 d-flex align-items-center justify-content-center">
                                     <span className="icon-instagram"></span>
                                 </div>
-                            </Link>
+                            </a>
                         </div>
                         <div className="col-md-4 col-lg-2 ftco-animate">
-                            <Link to="images/gallery-2.jpg" className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: "url('assets/images/gallery-2.jpg')" }}>
+                            <a href="https://www.instagram.com" className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: "url('assets/images/gallery-2.jpg')" }}>
                                 <div className="icon mb-4 d-flex align-items-center justify-content-center">
                                     <span className="icon-instagram"></span>
                                 </div>
-                            </Link>
+                            </a>
                         </div>
                         <div className="col-md-4 col-lg-2 ftco-animate">
-                            <Link to="images/gallery-3.jpg" className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: "url('assets/images/gallery-3.jpg')" }}>
+                            <a href="https://www.instagram.com" className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: "url('assets/images/gallery-3.jpg')" }}>
                                 <div className="icon mb-4 d-flex align-items-center justify-content-center">
                                     <span className="icon-instagram"></span>
                                 </div>
-                            </Link>
+                            </a>
                         </div>
                         <div className="col-md-4 col-lg-2 ftco-animate">
-                            <Link to="images/gallery-4.jpg" className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: "url('assets/images/gallery-4.jpg')" }}>
+                            <a href="https://www.instagram.com" className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: "url('assets/images/gallery-4.jpg')" }}>
                                 <div className="icon mb-4 d-flex align-items-center justify-content-center">
                                     <span className="icon-instagram"></span>
                                 </div>
-                            </Link>
+                            </a>
                         </div>
                         <div className="col-md-4 col-lg-2 ftco-animate">
-                            <Link to="images/gallery-5.jpg" className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: "url('assets/images/gallery-5.jpg')" }}>
+                            <a href="https://www.instagram.com" className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: "url('assets/images/gallery-5.jpg')" }}>
                                 <div className="icon mb-4 d-flex align-items-center justify-content-center">
                                     <span className="icon-instagram"></span>
                                 </div>
-                            </Link>
+                            </a>
                         </div>
                         <div className="col-md-4 col-lg-2 ftco-animate">
-                            <Link to="images/gallery-6.jpg" className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: "url('assets/images/gallery-6.jpg')" }}>
+                            <a href="https://www.instagram.com" className="gallery image-popup img d-flex align-items-center" style={{ backgroundImage: "url('assets/images/gallery-6.jpg')" }}>
                                 <div className="icon mb-4 d-flex align-items-center justify-content-center">
                                     <span className="icon-instagram"></span>
                                 </div>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>

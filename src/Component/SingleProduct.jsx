@@ -6,7 +6,12 @@ import { getProduct } from "../Store/ActionCreators/ProductActionCreators"
 import { getCart, addCart } from "../Store/ActionCreators/CartActionCreators"
 import { getWishlist, addWishlist } from "../Store/ActionCreators/WishlistActionCreators"
 export default function SingleProduct() {
-    var [p, setp] = useState({})
+    var [p, setp] = useState({
+        pic1:"",
+        pic2:"",
+        pic3:"",
+        pic4:""
+    })
     var [qty, setqty] = useState(1)
     var product = useSelector((state) => state.ProductStateData)
     var cart = useSelector((state) => state.CartStateData)
@@ -25,13 +30,13 @@ export default function SingleProduct() {
             setp(data)
     }
     function addToCart() {
-        var d = cart.find((item) => item.productid === product.id && item.id === Number(localStorage.getItem("userid")))
+        var d = cart.find((item) => item.productid === Number(id) && item.userid === sessionStorage.getItem("userid"))
         if (d)
             navigate("/cart")
         else {
             var item = {
                 productid: p.id,
-                userid: localStorage.getItem("userid"),
+                userid: sessionStorage.getItem("userid"),
                 name: p.name,
                 color: p.color,
                 size: p.size,
@@ -45,7 +50,22 @@ export default function SingleProduct() {
         }
     }
     function addToWishlist() {
-
+        var d = wishlist.find((item) => item.productid === Number(id) && item.userid === sessionStorage.getItem("userid"))
+        if (d)
+            navigate("/profile")
+        else {
+            var item = {
+                productid: p.id,
+                userid: sessionStorage.getItem("userid"),
+                name: p.name,
+                color: p.color,
+                size: p.size,
+                price: p.finalprice,
+                pic: p.pic1,
+            }
+            dispatch(addWishlist(item))
+            navigate("/profile")
+        }
     }
 
     useEffect(() => {
@@ -53,17 +73,6 @@ export default function SingleProduct() {
     }, [product.length])
     return (
         <>
-            {/* <div className="hero-wrap hero-bread" style={{backgroundImage: "url('assets/images/bg_6.jpg')"}}>
-                <div className="container">
-                    <div className="row no-gutters slider-text align-items-center justify-content-center">
-                        <div className="col-md-9 ftco-animate text-center">
-                            <p className="breadcrumbs"><span className="mr-2"><Link to="/">Home</Link></span> <span>Single Product</span></p>
-                            <h1 className="mb-0 bread">Single Product</h1>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-
             <section className="ftco-section">
                 <div className="container mt-3">
                     <div className="row">

@@ -19,8 +19,8 @@ export default function Footer() {
                 <h2 className="ftco-heading-2">Shopsy</h2>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
                 <ul className="ftco-footer-social list-unstyled float-md-left float-left mt-5">
-                  <li className="ftco-animate"><Link to="#"><span className="icon-facebook"></span></Link></li>
-                  <li className="ftco-animate"><Link to="#"><span className="icon-instagram"></span></Link></li>
+                  <li className="ftco-animate"><a href='https://www.facebook.com/'><span className="icon-facebook"></span></a></li>
+                  <li className="ftco-animate"><a href='https://www.instagram.com/'><span className="icon-instagram"></span></a></li>
                 </ul>
               </div>
             </div>
@@ -59,7 +59,8 @@ export default function Footer() {
                   <ul>
                     <li><span className="icon icon-map-marker py-1"></span><span className="text pb-4 py-1">221,Badarka,Sadar,Azamgarh,UP,India</span></li>
                     <li><Link to="#"><span className="icon icon-phone"></span><span className="text">+91 9795071712</span></Link></li>
-                    <li><Link to="#"><span className="icon icon-envelope pt-2"></span><span className="text pt-2"> aakashmauryaa122@gmail.com</span></Link></li>
+                    <li><Link to="#"><span className="icon icon-envelope py-2"></span><span className="text pt-2"> aakashmauryaa122@gmail.com</span></Link></li>
+                    <p className='mt-5 pt-4'>Made with <i className="fa fa-heart-o text-primary"></i> by easy Tutorials</p>
                   </ul>
                 </div>
               </div>

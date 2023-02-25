@@ -58,6 +58,9 @@ export default function UpdateProfile() {
             role: data.role
         }
         dispatch(updateUser(item))
+        if(data.role==="Admin")
+        navigate("/admin-home")
+        else
         navigate("/profile")
     }
     useEffect(() => {
@@ -65,7 +68,7 @@ export default function UpdateProfile() {
         var d = users.find((item) => item.id === Number(sessionStorage.getItem("userid")))
         if (d)
             setdata(d)
-    }, [])
+    }, [data.length])
     return (
         <>
             <div className="hero-wrap hero-bread" style={{ backgroundImage: "url('assets/images/bg_6.jpg')" }}>

@@ -273,25 +273,23 @@
   ],
   "user": [
     {
-      "id": 0
-    },
-    {
       "id": 1,
       "name": "Aakashdeep Maurya",
       "username": "mauryadon",
       "email": "aakashmauryaa122@gmail.com",
-      "phone": "9795071712",
+      "phone": "+91 9795071712",
       "password": "mnbvcxz123",
-      "addressline1": "118/B",
+      "addressline1": "CA 118/B",
       "addressline2": "Sarthi Digital Software Solution",
-      "addressline3": "MLP School",
+      "addressline3": "near MLP School",
       "pin": "110064",
       "city": "Harinagar",
       "state": "New Delhi",
-      "pic": "p24.jpg",
-      "role": "User"
+      "pic": "gallery-1.jpg",
+      "role": "Admin"
     },
     {
+      "id": 2,
       "name": "Shubham Maurya",
       "username": "shubham",
       "email": "mauryashubham122@gmail.com",
@@ -303,34 +301,228 @@
       "pin": "",
       "city": "",
       "state": "",
-      "pic": "",
-      "role": "User",
-      "id": 2
+      "pic": "gallery-1.jpg",
+      "role": "User"
     }
   ],
   "cart": [
     {
-      "id": 0
+      "productid": 1,
+      "userid": "1",
+      "name": "Male Jeans Slim Fit Mufti",
+      "color": "Black",
+      "size": "36",
+      "price": 2508,
+      "qty": 1,
+      "total": 2508,
+      "pic": "p5.jpg",
+      "id": 1
     }
   ],
   "wishlist": [
     {
-      "id": 0
+      "productid": 2,
+      "userid": "1",
+      "name": "Male Jeans Regular Fit",
+      "color": "Blue",
+      "size": "36",
+      "price": 3550,
+      "pic": "p11.jpg",
+      "id": 9
+    },
+    {
+      "productid": 5,
+      "userid": "1",
+      "name": "Male Jeans Adidas Slim Fit",
+      "color": "Blue",
+      "size": "38",
+      "price": 2508,
+      "pic": "p49.jpg",
+      "id": 10
+    },
+    {
+      "productid": 0,
+      "userid": "1",
+      "name": "Kids Jeans Slim Fit",
+      "color": "Blue",
+      "size": "26",
+      "price": 2475,
+      "pic": "p56.jpg",
+      "id": 11
+    },
+    {
+      "productid": 6,
+      "userid": "1",
+      "name": "Man Tshirt Killer",
+      "color": "Black",
+      "size": "LG",
+      "price": 1560,
+      "pic": "p3.jpg",
+      "id": 13
     }
   ],
   "checkout": [
     {
-      "id": 0
+      "userid": "1",
+      "paymentmode": "COD",
+      "orderstatus": "Delivered",
+      "paymentstatus": "Done",
+      "time": "2023-02-07T05:02:08.097Z",
+      "totalAmount": 8040,
+      "shippingAmount": 0,
+      "finalAmount": 8040,
+      "products": [
+        {
+          "productid": 11,
+          "userid": "1",
+          "name": "Male Tshirt White Polo",
+          "color": "White",
+          "size": "LG",
+          "price": 1470,
+          "qty": 2,
+          "total": 2940,
+          "pic": "p54.jpg",
+          "id": 1
+        },
+        {
+          "productid": 5,
+          "userid": "1",
+          "name": "Male Jeans Adidas Slim Fit",
+          "color": "Blue",
+          "size": "38",
+          "price": 2508,
+          "qty": 1,
+          "total": 2508,
+          "pic": "p49.jpg",
+          "id": 3
+        },
+        {
+          "productid": 8,
+          "userid": "1",
+          "name": "Kids Tshirt Blue Polo",
+          "color": "Blue",
+          "size": "SM",
+          "price": 864,
+          "qty": 3,
+          "total": 2592,
+          "pic": "p61.jpg",
+          "id": 4
+        }
+      ],
+      "id": 1
+    },
+    {
+      "userid": "1",
+      "paymentmode": "COD",
+      "orderstatus": "Order Placed",
+      "paymentstatus": "Pending",
+      "time": "2023-02-13T19:36:58.330Z",
+      "totalAmount": 13775,
+      "shippingAmount": 0,
+      "finalAmount": 13775,
+      "products": [
+        {
+          "productid": 1,
+          "userid": "1",
+          "name": "Male Jeans Slim Fit Mufti",
+          "color": "Black",
+          "size": "36",
+          "price": 2508,
+          "qty": 1,
+          "total": 2508,
+          "pic": "p5.jpg",
+          "id": 1
+        },
+        {
+          "productid": 5,
+          "userid": "1",
+          "name": "Male Jeans Adidas Slim Fit",
+          "color": "Blue",
+          "size": "38",
+          "price": 2508,
+          "qty": 1,
+          "total": 2508,
+          "pic": "p49.jpg",
+          "id": 2
+        },
+        {
+          "productid": 10,
+          "userid": "1",
+          "name": "Female Jeans Ripped ",
+          "color": "Blue",
+          "size": "32",
+          "price": 4410,
+          "qty": 1,
+          "total": 4410,
+          "pic": "p20.jpg",
+          "id": 3
+        },
+        {
+          "productid": 3,
+          "userid": "1",
+          "name": "Female Tshirt Max",
+          "color": "White",
+          "size": "32",
+          "price": 4349,
+          "qty": 1,
+          "total": 4349,
+          "pic": "p22.jpg",
+          "id": 4
+        }
+      ],
+      "id": 2
     }
   ],
   "contact": [
     {
-      "id": 0
+      "name": "Shubham",
+      "email": "mauryashubham122@gmail.com",
+      "phone": "9795071712",
+      "subject": "checking",
+      "message": "jsfnckbdljen",
+      "status": "Active",
+      "time": "2023-02-13T05:11:45.673Z",
+      "id": 1
+    },
+    {
+      "name": "Aakashdeep",
+      "email": "aakashmauryaa122@gmail.com",
+      "phone": "9795071712",
+      "subject": "sbzdebshbvrge",
+      "message": "test",
+      "status": "Active",
+      "time": "2023-02-13T18:16:09.222Z",
+      "id": 2
+    },
+    {
+      "name": "Aakashdeep Maurya",
+      "email": "aakashmauryaa12@gmail.com",
+      "phone": "9795071710",
+      "subject": "sbzdebshbvrgemnsbksjdandwqwlddsdvnskjcnasdkxjanskskjDbnm ",
+      "message": "trial",
+      "status": "Active",
+      "time": "2023-02-13T18:16:40.785Z",
+      "id": 3
+    },
+    {
+      "name": "Aakashdeep Maurya",
+      "email": "mauryadon122@gmail.com",
+      "phone": "9795071712",
+      "subject": "checking",
+      "message": "dfbd dgrddbxsbsbb",
+      "status": "Active",
+      "time": "2023-02-13T18:17:33.214Z",
+      "id": 4
     }
   ],
   "newslatter": [
     {
-      "id": 0
+      "email": "mauryashubham122@gmail.com",
+      "id": 1
+    },
+    {
+      "email": "aakashmauryaa122@gmail.com",
+      "id": 2
     }
   ]
 }

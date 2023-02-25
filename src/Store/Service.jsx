@@ -282,3 +282,113 @@ export async function deleteWishlistAPI(data) {
     })
     return await response.json()
 }
+
+// checkout services
+export async function createCheckoutAPI(data) {
+    var response = await fetch("http://localhost:4000/checkout", {
+        method: "post",
+        headers: {
+            "content-type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+    return await response.json()
+}
+export async function getCheckoutAPI() {
+    var response = await fetch("http://localhost:4000/checkout", {
+        method: "get",
+        headers: {
+            "content-type": "application/json"
+        }
+    })
+    return await response.json()
+}
+export async function updateCheckoutAPI(data) {
+    var response = await fetch("http://localhost:4000/checkout/" + data.id, {
+        method: "put",
+        headers: {
+            "content-type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+    return await response.json()
+}
+export async function deleteCheckoutAPI(data) {
+    var response = await fetch("http://localhost:4000/checkout/" + data.id, {
+        method: "delete",
+        headers: {
+            "content-type": "application/json"
+        }
+    })
+    return await response.json()
+}
+
+// contact services
+export async function createContactAPI(data) {
+    var response = await fetch("http://localhost:4000/contact", {
+        method: "post",
+        headers: {
+            "content-type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+    return await response.json()
+}
+export async function getContactAPI() {
+    var response = await fetch("http://localhost:4000/contact", {
+        method: "get",
+        headers: {
+            "content-type": "application/json"
+        }
+    })
+    return await response.json()
+}
+export async function updateContactAPI(data) {
+    var response = await fetch("http://localhost:4000/contact/" + data.id, {
+        method: "put",
+        headers: {
+            "content-type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+    return await response.json()
+}
+export async function deleteContactAPI(data) {
+    var response = await fetch("http://localhost:4000/contact/" + data.id, {
+        method: "delete",
+        headers: {
+            "content-type": "application/json"
+        }
+    })
+    return await response.json()
+}
+
+// newslatter services
+export async function createNewslatterAPI(data) {
+    var response = await fetch("http://localhost:4000/newslatter", {
+        method: "post",
+        headers: {
+            "content-type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+    return await response.json()
+}
+export async function getNewslatterAPI() {
+    var response = await fetch("http://localhost:4000/newslatter", {
+        method: "get",
+        headers: {
+            "content-type": "application/json"
+        }
+    })
+    return await response.json()
+}
+export async function deleteNewslatterAPI(data) {
+    var response = await fetch("http://localhost:4000/newslatter/" + data.id, {
+        method: "delete",
+        headers: {
+            "content-type": "application/json"
+        }
+    })
+    return await response.json()
+}

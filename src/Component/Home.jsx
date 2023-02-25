@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom'
 
 import { useSelector, useDispatch } from 'react-redux';
 import { getProduct } from "../Store/ActionCreators/ProductActionCreators"
+import Newslatter from './Newslatter';
 
 export default function Home() {
     var product = useSelector((state) => state.ProductStateData)
-    product.sort((x,y)=>y.id-x.id)
+    product.sort((x, y) => y.id - x.id)
     product = product.slice(0, 8)
     var dispatch = useDispatch()
     function getAPIData() {
@@ -358,6 +359,8 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+            <Newslatter/>
         </>
     )
 }
